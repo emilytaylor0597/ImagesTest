@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+      html, body {
+      margin: 0;
+      padding: 10px;
+      height: 100%;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #f47936, #26358C, #f47936, #26358C, #f47936, #26358C, #f47936, #26358C);
+      color: white;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 3vw;
+      padding: 3vw;
+      height: 95vh;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 0.5vw;
+      padding: 1vw;
+      overflow: hidden;
+    }
+
+    .item img {
+      max-height: 100%;
+      width: 100%;
+      height: 95%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .title {
+      margin-top: 1vh;
+      font-size: 1.2vw;
+      text-align: center;
+    }
+  </style>
+</head>
+
+  
+
+<body>
+
+    <div class="title"> Test Web Page for Image Types </div>
+
+    <div class="container">
+
+      <div class="item"><img src="VITEC.bmp" alt=""><div class="title">This is a .bmp</div></div>
+      <div class="item"><img src="VITEC.gif" alt=""><div class="title">This is a .gif</div></div>
+      <div class="item"><img src="VITEC.jfif" alt=""><div class="title">This is a .jfif</div></div>
+      <div class="item"><img src="VITEC.jpeg" alt=""><div class="title">This is a .jpeg</div></div>           
+      <div class="item"><img src="VITEC.jpg" alt=""><div class="title">This is a .jpg</div></div>
+      <div class="item"><img src="logo-white.png" alt=""><div class="title">This is a .png</div></div>
+      <div class="item"><img src="logo-white.svg" alt=""><div class="title">This is a .svg</div></div>
+      <div class="item"><img src="VITEC.tiff" alt=""><div class="title">This is a .tiff</div></div>
+    </div>
+</body>
+</html>
